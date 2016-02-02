@@ -20,11 +20,19 @@
     "test": ""
   },
   "dependencies": {
-    "express": "3.1.0",
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "errorhandler": "^1.4.3",
+    "express": ">=3.1.0",
+    "express-session": "^1.13.0",
     "jade": "*",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
     "nodemon": "*",
     "passport": "*",
-    "passport-saml": "git+https://github.com/bergie/passport-saml.git"
+    "passport-saml": "git+https://github.com/bergie/passport-saml.git",
+    "qs": "^6.0.2",
+    "serve-static": "^1.10.2"
   },
   "engines": {
     "node": ">= 0.10.0"
