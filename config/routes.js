@@ -20,6 +20,14 @@ module.exports = function(app, config, passport) {
 			failureRedirect : "/login",
 		})
 	);
+	
+	
+	app.get("/poster", function (req, res) {
+		res.render("poster",
+			{
+				user: null
+			});
+	});
 
 	app.post('/login/callback',
 		passport.authenticate(config.passport.strategy,

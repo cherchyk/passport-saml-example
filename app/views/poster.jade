@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	form(method="post" action="/login/callback")
+
+		
+		p SAML Response XML
+			br
+			textarea(name="SAMLResponse" style="width:400px; height: 200px;")
+		div
+			input(type="submit" value="Submit Response")
